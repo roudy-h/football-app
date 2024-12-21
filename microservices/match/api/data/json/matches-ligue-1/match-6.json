@@ -1,0 +1,83 @@
+{
+  "filters": {
+    "dateFrom": "2023-10-11",
+    "dateTo": "2023-10-21",
+    "permission": "TIER_ONE",
+    "competitions": "2015"
+  },
+  "resultSet": {
+    "count": 1,
+    "competitions": "FL1",
+    "first": "2023-10-20",
+    "last": "2023-10-20",
+    "played": 1
+  },
+  "matches": [
+    {
+      "area": {
+        "id": 2081,
+        "name": "France",
+        "code": "FRA",
+        "flag": "https://crests.football-data.org/773.svg"
+      },
+      "competition": {
+        "id": 2015,
+        "name": "Ligue 1",
+        "code": "FL1",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/FL1.png"
+      },
+      "season": {
+        "id": 1595,
+        "startDate": "2023-08-13",
+        "endDate": "2024-05-18",
+        "currentMatchday": 29,
+        "winner": null
+      },
+      "id": 442779,
+      "utcDate": "2023-10-20T19:00:00Z",
+      "status": "FINISHED",
+      "matchday": 9,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2023-10-21T00:21:24Z",
+      "homeTeam": {
+        "id": 533,
+        "name": "Le Havre AC",
+        "shortName": "Le Havre",
+        "tla": "HAC",
+        "crest": "https://crests.football-data.org/533.png"
+      },
+      "awayTeam": {
+        "id": 546,
+        "name": "Racing Club de Lens",
+        "shortName": "RC Lens",
+        "tla": "RCL",
+        "crest": "https://crests.football-data.org/546.png"
+      },
+      "score": {
+        "winner": "DRAW",
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": 0,
+          "away": 0
+        },
+        "halfTime": {
+          "home": 0,
+          "away": 0
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": [
+        {
+          "id": 43918,
+          "name": "François Letexier",
+          "type": "REFEREE",
+          "nationality": "France"
+        }
+      ]
+    }
+  ]
+}

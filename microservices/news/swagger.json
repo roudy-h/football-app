@@ -1,0 +1,30 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Football API Documentation",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "host": "localhost:8020/api",
+  "basePath": "/",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "paths": {
+    "/news": {
+      "get": {
+        "tags": [
+          "News"
+        ],
+        "summary": "Tous les articles",
+        "description": "Tous les articles disponibles",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}

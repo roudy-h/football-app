@@ -1,0 +1,14 @@
+.prediction-container{
+    padding: 0 20px 20px 20px;
+}
+
+.prediction{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.prediction-valeurs{
+    display: flex;
+    justify-content: space-around;
+}

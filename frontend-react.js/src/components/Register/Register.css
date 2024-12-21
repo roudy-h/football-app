@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.allForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 5vi;
+    padding: 40px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.TextField{
+    background-color: white;
+    width: 20px;
+}

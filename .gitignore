@@ -1,0 +1,5 @@
+.idea
+.vscode
+backend-node.js/node_modules
+backend-node.js/coverage
+backend-node.js/.nyc_output

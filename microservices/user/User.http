@@ -1,0 +1,47 @@
+### GET User
+GET localhost:8080/api/user
+
+### POST User
+POST localhost:8050/api/user
+content-type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "johan.doe@mail.com",
+    "password": "password"
+}
+
+### GET Account
+GET localhost:8050/api/account
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaGFuLmRvZUBtYWlsLmNvbSIsImlhdCI6MTcxMTYxMjkyMH0.K9COxDJpBX4VQxKMiuIbPeXhhyfXwM5Y6SZXA0SwTjs
+
+### GET Login
+POST localhost:8080/api/login
+content-type: application/json
+
+{
+  "email": "johan.doe@mail.com",
+  "password": "password"
+}
+
+### PUT User
+PUT localhost:8080/api/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaGFuLmRvZUBtYWlsLmNvbSIsImlhdCI6MTcxMTYxMjkyMH0.K9COxDJpBX4VQxKMiuIbPeXhhyfXwM5Y6SZXA0SwTjs
+content-type: application/json
+
+{
+    "firstName": "Alice",
+    "lastName": "Dupont",
+    "email": "johan.doe@mail.com",
+    "password": "password"
+}
+
+### DELETE User
+DELETE localhost:8080/api/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaGFuLmRvZUBtYWlsLmNvbSIsImlhdCI6MTcxMTYxMjkyMH0.K9COxDJpBX4VQxKMiuIbPeXhhyfXwM5Y6SZXA0SwTjs
+content-type: application/json
+
+{
+    "email": "johan.doe@mail.com"
+}

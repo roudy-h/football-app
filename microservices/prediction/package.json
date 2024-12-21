@@ -1,0 +1,35 @@
+{
+  "name": "prediction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "nodemon server.mjs",
+    "test": "c8 nyc mocha --timeout 10000 --cahe off --exit",
+    "start-gendoc": "node swagger-autogen.mjs"
+  },
+  "author": "eq_02_01_eluere-titouan_gille-swann_hajo-roudy_hequet-nathan_danilo-elouan",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "c8": "^9.1.0",
+    "chai": "^5.0.3",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.1",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "https-proxy-agent": "^7.0.4",
+    "jsonwebtoken": "^9.0.2",
+    "mocha": "^10.2.0",
+    "mongodb": "^6.3.0",
+    "mongodb-memory-server": "^9.1.6",
+    "mongoose": "^8.1.1",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.0.3",
+    "nyc": "^15.1.0",
+    "request": "^2.88.2",
+    "supertest": "^6.3.4",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.0"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Football match API Documentation",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "host": "localhost:8010/api",
+  "basePath": "/",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "paths": {
+    "/match": {
+      "get": {
+        "tags": [
+          "Match"
+        ],
+        "summary": "Tous les matches de la saison",
+        "description": "Tous les matches de la saison du championnat de Ligue 1",
+        "responses": {
+          "200": {
+            "description": "Les matches ont été trouvés."
+          }
+        }
+      }
+    },
+    "/match/current": {
+      "get": {
+        "tags": [
+          "Match"
+        ],
+        "summary": "Tous les matches en cours ou à venir",
+        "description": "Tous les matches en cours ou à venir du championnat de Ligue 1 de la saison courante",
+        "responses": {
+          "200": {
+            "description": "Les matches en cours ou à venir ont été trouvés."
+          }
+        }
+      }
+    },
+    "/match/day/{day}": {
+      "get": {
+        "tags": [
+          "Match"
+        ],
+        "summary": "Tous les matches d\\'une journée",
+        "description": "Tous les matches d\\'une journée du championnat de Ligue 1 de la saison actuelle",
+        "parameters": [
+          {
+            "name": "day",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "description": "Numéro de la journée"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Les matches de la journée {day} ont été trouvés."
+          },
+          "400": {
+            "description": "Le numéro de journée doit être compris entre 1 et 34."
+          }
+        }
+      }
+    },
+    "/match/{id}": {
+      "get": {
+        "tags": [
+          "Match"
+        ],
+        "summary": "Un match par son id",
+        "description": "Un match du championnat de Ligue 1 de la saison actuelle par son id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "description": "Identifiant du match"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Le match a été trouvé."
+          },
+          "400": {
+            "description": "L'id du match doit être un entier."
+          },
+          "404": {
+            "description": "Le match avec l'id {id} n'existe pas."
+          }
+        }
+      }
+    }
+  }
+}

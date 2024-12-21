@@ -1,0 +1,30 @@
+### POST User
+POST localhost:8080/api/user
+content-type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "johan.doe@mail.com",
+  "password": "password"
+}
+
+### Add prediction
+POST localhost:8080/api/prediction
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaGFuLmRvZUBtYWlsLmNvbSIsImlhdCI6MTcxMTYxMjkyMH0.K9COxDJpBX4VQxKMiuIbPeXhhyfXwM5Y6SZXA0SwTjs
+content-type: application/json
+
+{
+  "prediction": "home",
+  "matchId": 442954
+}
+
+### Get predictions by user
+GET localhost:8080/api/prediction/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaGFuLmRvZUBtYWlsLmNvbSIsImlhdCI6MTcxMTYxMjkyMH0.K9COxDJpBX4VQxKMiuIbPeXhhyfXwM5Y6SZXA0SwTjs
+
+### Get predictions
+GET localhost:8080/api/prediction
+
+### Get predictions by match
+GET localhost:8080/api/prediction/match/442954

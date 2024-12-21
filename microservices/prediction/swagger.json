@@ -1,0 +1,127 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Football prediction API Documentation",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "host": "localhost:8030/api",
+  "basePath": "/",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "paths": {
+    "/prediction": {
+      "get": {
+        "tags": [
+          "Prediction"
+        ],
+        "summary": "Toutes les prédictions",
+        "description": "Toutes les prédictions des utilisateurs pour les matchs",
+        "responses": {
+          "200": {
+            "description": "Les prédictions ont été trouvées"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Prediction"
+        ],
+        "summary": "Ajouter une prédiction",
+        "description": "Ajouter une prédiction pour un match",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "JWT Bearer token",
+            "required": true,
+            "type": "string",
+            "default": "Bearer <token>"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Informations de la prédiction",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "matchId": {
+                  "type": "number",
+                  "example": 1
+                },
+                "prediction": {
+                  "type": "string",
+                  "example": "home"
+                }
+              },
+              "required": [
+                "matchId",
+                "prediction"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "La prédiction a été ajoutée."
+          },
+          "400": {
+            "description": "Erreur lors de l'ajout de la prédiction."
+          }
+        }
+      }
+    },
+    "/prediction/match/{id}": {
+      "get": {
+        "tags": [
+          "Prediction"
+        ],
+        "summary": "Prédictions d\\'un match",
+        "description": "Prédictions d\\'un match",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "description": "Identifiant du match"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Les prédictions du match ont été trouvées."
+          },
+          "400": {
+            "description": "Erreur lors de la recherche des prédictions du match."
+          }
+        }
+      }
+    },
+    "/prediction/user": {
+      "get": {
+        "tags": [
+          "Prediction"
+        ],
+        "summary": "Prédictions d\\'un utilisateur",
+        "description": "Prédictions d\\'un utilisateur",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "JWT Bearer token",
+            "required": true,
+            "type": "string",
+            "default": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Les prédictions de l'utilisateur ont été trouvées."
+          }
+        }
+      }
+    }
+  }
+}

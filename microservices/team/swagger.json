@@ -1,0 +1,72 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Football API Documentation",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "host": "localhost:8040/api",
+  "basePath": "/",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "paths": {
+    "/team": {
+      "get": {
+        "tags": [
+          "Team"
+        ],
+        "summary": "Toutes les équipes",
+        "description": "Toutes les équipes du championnat de Ligue 1 de la saison actuelle",
+        "responses": {
+          "200": {
+            "description": "Les équipes ont été trouvées."
+          }
+        }
+      }
+    },
+    "/team/ranks": {
+      "get": {
+        "tags": [
+          "Team"
+        ],
+        "summary": "Le classement des équipes",
+        "description": "Le classement actuel de toutes les équipes de Ligue 1 selon les résutats de leurs matchs finis",
+        "responses": {
+          "200": {
+            "description": "Le classement à été créé."
+          }
+        }
+      }
+    },
+    "/team/{code}": {
+      "get": {
+        "tags": [
+          "Team"
+        ],
+        "summary": "Une équipe par son code",
+        "description": "Une équipe du championnat de Ligue 1 de la saison actuelle par son code",
+        "parameters": [
+          {
+            "name": "code",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "L'équipe a été trouvée."
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "L'équipe avec le code {code} n'existe pas."
+          }
+        }
+      }
+    }
+  }
+}

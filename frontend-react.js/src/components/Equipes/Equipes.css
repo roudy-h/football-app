@@ -1,0 +1,36 @@
+/* *** STYLE POUR 1 TEAM *** */
+
+.teamContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.teamLink {
+    width: 200px;
+    height: 260px;
+    border: solid 1px black;
+    background-color: white;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+#name {
+    color: black;
+}
+
+/* *** STYLE POUR TOUTES LES TEAMS *** */
+
+.teams {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.teams > :nth-child(n+17):nth-child(-n+18) {
+    grid-column: auto / span 2;
+}

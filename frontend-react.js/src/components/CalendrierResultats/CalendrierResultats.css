@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.matches {
+    display: flex;
+}
+
+.forButton {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    color: white;
+    background-color: black;
+    border: solid 1px black;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #f0f0f0;
+    border: #f0f0f0;
+    color: #f0f0f0;
+    cursor: auto;
+}
+
+.day {
+    margin: 20px 0 0 0;
+}

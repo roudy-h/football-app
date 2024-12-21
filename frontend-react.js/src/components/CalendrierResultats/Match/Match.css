@@ -1,0 +1,72 @@
+/* *** COMPOSANT MATCH *** */
+
+.matchContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.infosMatch {
+    height: 50px;
+}
+
+.match {
+    width: 50vw;
+    height: 50px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+
+    margin-bottom: 10px;
+}
+
+.homeTeam, .awayTeam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeTeam a, .awayTeam a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: black;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hour {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dayDate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: blue;
+    /* border-radius: 5px; */
+    color: white;
+    padding: 10px;
+    margin: 15px 300px 15px 300px;
+}
+
+.btn-prediction {
+    position: absolute;
+    transform: translateX(-180px) translateY(-50px);
+}
+
+.btn-prediction-clicked {
+    position: absolute;
+    transform: translateX(-107px) translateY(-161px);
+}

@@ -1,0 +1,12 @@
+{
+  "filters": {
+    "dateFrom": "2024-03-19",
+    "dateTo": "2024-03-29",
+    "permission": "TIER_ONE",
+    "competitions": "2015"
+  },
+  "resultSet": {
+    "count": 0
+  },
+  "matches": []
+}

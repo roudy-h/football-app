@@ -1,0 +1,32 @@
+.user-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vi;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    background-color: white;
+    width: 75vh;
+    padding: 30px;
+}
+
+.user-prediction{
+    background-color: white;
+    padding: 30px;
+    width: 75vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user-prediction ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
